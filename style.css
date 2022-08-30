@@ -1,0 +1,120 @@
+
+body{
+    background-color: #efefef;
+    opacity: 0.8;
+    background-image: radial-gradient(#adadad 1.25px, #efefef 1.25px);
+    background-size: 25px 25px;
+    height: 100vh;
+    overflow: hidden;
+    color: black;
+    animation: scroll 50s linear infinite;
+}
+
+@keyframes scroll{
+    100% {
+        background-position: 0 -1000px;
+    }
+}
+
+
+main{
+    margin-left: clamp(0px, 5vw, 10vw);
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:left;
+    height: 95vh;
+    margin-top: 4%;
+}
+
+h1, h2, h3{
+    margin: 1rem 0 0 0;
+    padding:0;
+    width:fit-content;
+}
+
+h1{
+    font-size: clamp(80px, 12vw, 20vh);
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+
+h2{
+    font-size: clamp(40px, 8vw, 8vh);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+h3{
+    font-size: clamp(20px, 5vw, 4vh);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+    max-width: clamp(300px, 35vw, 45vw);
+}
+
+span{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    height: auto;
+    margin: 1rem 0 0.5rem 0;
+    width: clamp(200px, 30vw, 50vw)
+}
+
+span a{
+  height: clamp(25px, 5vw, 40px);
+  width: clamp(25px, 5vw, 40px);
+  margin: 2% 3% 0 3%;
+}
+
+span a:hover{
+    transform:scale(1.25);
+    transition: 0.25s;
+}
+
+#github{
+    margin-left: 0;
+    background: url(./assets/github-icon.png);
+    background-size: contain;
+}
+
+#linkedin{
+    background: url(./assets/linkedin-round-icon.png);
+    background-size: contain;
+}
+
+#angelist{
+    background: url(./assets/AngelList_logo.png);
+    background-size: contain;
+}
+
+#twitter{
+    background: url(./assets/twitter-round-icon.png);
+    background-size: contain;
+}
+
+p{
+    margin: 1rem 0 0 0;
+    font-size: max(2.25vh, 18px);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    width: clamp(300px, 50vw, 60vw)
+}
+
+p > a{
+    text-decoration: underline dashed teal 3px;
+    color: teal;
+    padding: 0;
+    margin: 0;
+    font-weight:600;
+}
+
+p > a:hover{
+    background: teal;
+    color: white;
+    transition: 0.25s
+}
+
